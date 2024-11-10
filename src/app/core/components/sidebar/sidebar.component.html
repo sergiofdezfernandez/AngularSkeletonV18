@@ -1,3 +1,20 @@
-<ul>
-  <li>TODO</li>
-</ul>
+<div class="menu-items-wrapper">
+  <button class="hamburger-button" (click)="toggleSidebar()">
+    <i class="pi pi-bars"></i>
+  </button>
+  <div [class.collapsed]="isSidebarCollapsed">
+    <nav class="menu-items-nav">
+      @for (item of sidebarMenuItems; track item.id) {
+        <a class="sidebar-menu-item" [routerLink]="item.path">
+          <svg-icon [key]="item.icon" class="sidebar-menu-item-svg"></svg-icon>
+          @if (!isSidebarCollapsed) {
+            <p>{{ item.title }}</p>
+          }
+          @if (isActive(item.path)) {
+            <div class="active-bar"></div>
+          }
+        </a>
+      }
+    </nav>
+  </div>
+</div>

@@ -5,6 +5,13 @@
 /* Order */
 @layer reset, primeng;
 
+:root {
+  --primary-color: #003f87;
+  --secondary-color: #ffffff;
+  --accent-color: #f47c00;
+  --hover-color: #0f66c9;
+}
+
 @layer base {
   html,
   body {
@@ -28,4 +35,73 @@
     flex: 1;
     padding: 20px;
   }
+  aside {
+    height: 100%;
+    border-bottom: 2px solid var(--primary-color);
+  }
+}
+.pi {
+  font-size: 2em;
+}
+
+.menu-items-wrapper {
+  background-color: var(--primary-color);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.menu-items-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.menu-items-nav.collapsed .sidebar-menu-item p {
+  display: none;
+}
+
+.sidebar-menu-item {
+  padding: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--secondary-color);
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+  gap: 3em;
+  position: relative;
+}
+.sidebar-menu-item:hover {
+  color: var(--accent-color);
+  background-color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.sidebar-menu-item a:active {
+  background-color: var(--hover-color);
+}
+
+.sidebar-menu-item-svg {
+  width: 1.5rem;
+}
+.hamburger-button {
+  background-color: transparent;
+  padding: 1em;
+  color: var(--secondary-color);
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger-button:hover {
+  color: var(--accent-color);
+}
+.active-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--accent-color);
 }
