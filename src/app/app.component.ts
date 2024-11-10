@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MainCoreComponent } from './core/container/main-core/main-core.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'dms-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [MainCoreComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

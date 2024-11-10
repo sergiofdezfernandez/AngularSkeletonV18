@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'primeng/resources/themes/lara-light-blue/theme.css';
+@import 'primeng/resources/primeng.css';
+@import 'primeicons/primeicons.css';
+/* Order */
+@layer reset, primeng;
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Open Sans', system-ui, sans-serif;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+  }
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+}
