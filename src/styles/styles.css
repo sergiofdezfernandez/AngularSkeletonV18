@@ -21,15 +21,17 @@
     font-family: Roboto, 'Open Sans', system-ui, sans-serif;
   }
   footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #918f90;
+    height: 2em;
+    border: 1px solid var(--primary-color);
   }
   .container {
     display: flex;
+    height: 100vh;
   }
   main {
     flex: 1;
@@ -38,6 +40,7 @@
   aside {
     height: 100%;
     border-bottom: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
   }
 }
 .pi {

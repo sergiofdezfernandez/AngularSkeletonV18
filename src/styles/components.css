@@ -2,3 +2,28 @@
   width: 250px;
   top: auto;
 }
+.p-toolbar {
+  padding: 0%;
+  background-color: var(--secondary-color);
+  border-radius: 0%;
+  border: 1px solid var(--primary-color);
+}
+.p-toolbar .p-toolbar-group-left {
+  padding: 0.25rem;
+}
+.p-toolbar .p-toolbar-group-right {
+  border: 1px solid var(--primary-color);
+}
+.p-toolbar .p-toolbar-group-right > div.border {
+  border-right: 1px solid var(--primary-color);
+}
+
+.p-button {
+  color: var(--secondary-color);
+  border-radius: 0%;
+  background-color: var(--accent-color);
+}
+
+.p-button:focus {
+  box-shadow: none;
+}

@@ -1,25 +1,26 @@
 <p-toolbar>
-  <div class="p-toolbar-group-left">
-    <img src="logo.png" alt="Logo" style="width: 200px" />
+  <div class="p-toolbar-group-left border">
+    <img src="favicon.ico" alt="Logo" />
   </div>
-  <div class="p-toolbar-group-right">
-    <p-button
-      pButton
-      pRipple
-      icon="pi pi-cog"
-      class="p-button-rounded p-button-secondary"
-    ></p-button>
-    <p-button
-      pButton
-      pRipple
-      icon="pi pi-user"
-      class="p-button-rounded p-button-secondary"
-    ></p-button>
-    <p-button
-      pButton
-      pRipple
-      icon="pi pi-power-off"
-      class="p-button-rounded p-button-danger"
-    ></p-button>
-  </div>
+  <!-- <div class="p-toolbar-group-right">
+    <div class="border">
+      <p>Fecha</p>
+      <span>{{ currentDate | date: 'fullDate' }}</span>
+    </div>
+    <div class="border">
+      <p>Hora</p>
+      <span>{{ currentDate | date: 'fullTime' }}</span>
+    </div>
+    <div class="border">
+      <p-toggleButton
+        [(ngModel)]="isOnline"
+        onLabel="Online"
+        offLabel="Offline"
+        offIcon="pi pi-times"
+        onIcon="pi pi-check"
+        ariaLabel="Do you confirm"
+      >
+      </p-toggleButton>
+    </div>
+  </div> -->
 </p-toolbar>
